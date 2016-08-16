@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
+
 '''
-This file is the main script of this project.
+This file is the main script of PM-TDC-PLOT.
 '''
 
 def main():
