@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-
 '''
 This file is the main script of PM-TDC-PLOT.
 '''
+
+from tkinter.filedialog import askopenfilename
 
 def main():
     """ main function
@@ -18,7 +19,9 @@ def main():
     Raises:
         NULL
     """
-      return
+    filename = askopenfilename()
+    print(filename)
+    return
 
 if __name__ == '__main__':
     main()
