@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+'''
+This file is the main script of this project.
+'''
+
+def main():
+    """ main function
+
+    This is the main function of this project.
+
+    Args:
+        NULL
+
+    Returns:
+        NULL
+
+    Raises:
+        NULL
+    """
+      return
+
+if __name__ == '__main__':
+    main()
