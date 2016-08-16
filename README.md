@@ -2,7 +2,7 @@
 
 This project is a mini project that uses Python 3 to create a time-diameter-count plot of particular matters.
 
-X-axis refers to time, Y-axis indicates diameter and the color at (x, y) is the count of particular matters with diameter y at time x.
+In the plot, X-axis refers to time, Y-axis indicates diameter and the color at point (x, y) is the count of particular matters with diameter y at time x.
 
 ## License
 
