@@ -4,8 +4,8 @@ This project is a mini project that uses Python 3 to create a time-diameter-coun
 
 In the plot, X-axis refers to time, Y-axis indicates diameter and the color at point (x, y) is the count of particular matters with diameter y at time x.
 
-## I would try to 
-- follow [Google Python Style](https://google.github.io/styleguide/pyguide.html) during coding.
+## I would try to
+- follow [Google Python Style](https://google.github.io/styleguide/pyguide.html)
 - make it interactive (with Flask)
 
 ## License
