@@ -4,6 +4,11 @@ This project is a mini project that uses Python 3 to create a time-diameter-coun
 
 In the plot, X-axis refers to time, Y-axis indicates diameter and the color at point (x, y) is the count of particular matters with diameter y at time x.
 
+Raw txt files in the "data/raw/" folder would be automatically parsed during initialization 
+and correspoding figures would be automatically generated.
+Parsed data would be stored in the "data/parsed/" folder, 
+and figures would be stored in the "figures" folder.
+
 ## I would try to
 - follow [Google Python Style](https://google.github.io/styleguide/pyguide.html)
 - make it interactive (with Flask)
