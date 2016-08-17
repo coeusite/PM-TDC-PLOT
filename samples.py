@@ -3,14 +3,25 @@ import numpy as np
 import pandas as pd
 
 def gaussian(x, mu, sig):
+    # calculating probability of Gaussian distribution
     return np.exp(-np.power(x - mu, 2.) / (2 * np.power(sig, 2.)))
 
 def generate():
-    # log(diameters): (-1, 3)
-    # counts = d N/d log(diameters): gaussian(mu|t, 0.1)
-    # (x, y, color) = (time, diameters, counts)
-    x_length = 200
-    y_length = 100
+    '''generate function
+
+        This is the sample generator function.
+
+        Args:
+            NULL
+
+        Returns:
+            sample (pd.DataFrame)
+                log(diameters): (-1, 3)
+                counts = d N/d log(diameters): gaussian(mu|t, 0.1)
+                (x, y, z|color) = (time, diameters, counts)
+    '''
+    x_length = 201
+    y_length = 101
     # vector
     times = np.linspace(0, 100, x_length)
     diameters = np.linspace(-1, 3, y_length)
@@ -25,11 +36,17 @@ def generate():
     # plot samples
     plt.imshow(np.flipud(counts.transpose()),
                     cmap="jet", interpolation='none',
+                    vmin=0, vmax=1.5,
                     extent=[0, 100, -1, 3], aspect="auto")
     plt.xlabel("Time")
     plt.ylabel("log(Diameters)")
+    cbar = plt.colorbar(orientation='horizontal')
+    cbar.set_label('d N / d log(diameters)')
     plt.show()
     # transform matrix to pd.DataFrame
-    df = pd.DataFrame(data=counts, index=times, columns=diameters)
-    return
-    
+    sample = pd.DataFrame(data=counts, index=np.array(times.round(2), dtype=np.str),
+                        columns=np.array(diameters.round(2), dtype=np.str))
+    return sample
+
+# sample.to_csv("sample/data.csv", encoding='utf-8')
+# data = pd.read_csv("sample/data.csv", encoding='utf-8', index_col=1)
