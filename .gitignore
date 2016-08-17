@@ -89,3 +89,5 @@ ENV/
 .ropeproject
 
 # inputs and outputs
+data/
+figures/
