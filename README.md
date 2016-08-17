@@ -1,6 +1,6 @@
 # PM-TDC-PLOT
 
-This project is a mini project that uses Python 3 to create a time-diameter-count plot of particular matters.
+This project is a mini project that uses **Python 3** to create a time-diameter-count plot of particular matters.
 
 In the plot, X-axis refers to time, Y-axis indicates diameter and the color at point (x, y) is the count of particular matters with diameter y at time x.
 
@@ -16,7 +16,7 @@ and figures would be stored in the "figures" folder.
 ## License
 
 PM-TDC-PLOT is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as
+it under the terms of the GNU Lesser General Public License (LGPL) as
 published by the Free Software Foundation, either version 3 of the
 License, or (at your option) any later version.
 
