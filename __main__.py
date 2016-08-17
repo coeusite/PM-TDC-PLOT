@@ -9,7 +9,7 @@
 '''
 
 from tkinter.filedialog import askopenfilename
-import _inputs, _outputs
+from libs import _inputs, _outputs
 
 def main():
     """main function
