@@ -9,7 +9,7 @@
 '''
 
 from tkinter.filedialog import askopenfilename
-import _inputs
+import _inputs, _outputs
 
 def main():
     """main function
@@ -19,7 +19,7 @@ def main():
     """
     file_name = askopenfilename()
     data = _inputs.csv_to_dataframe(file_name)
-    print(data)
+    _outputs.plot(data)
     return
 
 if __name__ == '__main__':
