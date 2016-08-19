@@ -1,6 +1,6 @@
-# PM-TDC-PLOT for *TSI 3321*
+# PM-TDC-PLOT for TSI 3321
 
-This project is designed for parsing data from *TSI 3321*, and it is a mini project that uses **Python 3** to create a time-diameter-count plot of particular matters.
+This project is designed for parsing data from **TSI 3321**, and it is a mini project that uses **Python 3** to create a time-diameter-count plot of particular matters.
 
 In the plot, X-axis refers to time, Y-axis indicates diameter and the color at point (x, y) is the count of particular matters with diameter y at time x.
 
