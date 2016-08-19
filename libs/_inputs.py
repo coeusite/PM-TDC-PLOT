@@ -12,5 +12,5 @@ def csv_to_dataframe(file_name, encoding=None):
         Returns:
             data: numpy matrix
     '''
-    data = pd.read_csv(file_name, index_col=1,  encoding=encoding)
+    data = pd.read_csv(file_name, index_col=0,  encoding=encoding)
     return data
